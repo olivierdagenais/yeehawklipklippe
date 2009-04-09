@@ -126,6 +126,7 @@ namespace ElectricSunlightOrchestra
         private void ReloadDevices()
         {
             mButtonMappings.Clear();
+            mAxisMappings.Clear();
             foreach (DeviceInstance di in mDeviceInstances)
             {
                 Device d = new Device(di.InstanceGuid);
