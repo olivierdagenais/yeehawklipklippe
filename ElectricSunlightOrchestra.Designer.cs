@@ -33,9 +33,9 @@
             this.mainLayout = new System.Windows.Forms.TableLayoutPanel();
             this.deviceAxisConfiguration = new System.Windows.Forms.DataGridView();
             this.deviceButtonConfiguration = new System.Windows.Forms.DataGridView();
-            this.doneLoading = new System.Windows.Forms.Timer(this.components);
             this.buttonsLabel = new System.Windows.Forms.Label();
             this.axisLabel = new System.Windows.Forms.Label();
+            this.doneLoading = new System.Windows.Forms.Timer(this.components);
             this.mainLayout.SuspendLayout();
             ( (System.ComponentModel.ISupportInitialize) ( this.deviceAxisConfiguration ) ).BeginInit();
             ( (System.ComponentModel.ISupportInitialize) ( this.deviceButtonConfiguration ) ).BeginInit();
@@ -69,6 +69,9 @@
             this.deviceAxisConfiguration.AllowUserToAddRows = false;
             this.deviceAxisConfiguration.AllowUserToDeleteRows = false;
             this.deviceAxisConfiguration.AllowUserToOrderColumns = true;
+            this.deviceAxisConfiguration.AllowUserToResizeRows = false;
+            this.deviceAxisConfiguration.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.deviceAxisConfiguration.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.deviceAxisConfiguration.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.deviceAxisConfiguration.Dock = System.Windows.Forms.DockStyle.Fill;
             this.deviceAxisConfiguration.Location = new System.Drawing.Point(471, 23);
@@ -92,10 +95,6 @@
             this.deviceButtonConfiguration.Size = new System.Drawing.Size(462, 558);
             this.deviceButtonConfiguration.TabIndex = 2;
             // 
-            // doneLoading
-            // 
-            this.doneLoading.Tick += new System.EventHandler(this.doneLoading_Tick);
-            // 
             // buttonsLabel
             // 
             this.buttonsLabel.AutoSize = true;
@@ -117,6 +116,10 @@
             this.axisLabel.TabIndex = 5;
             this.axisLabel.Text = "Axis (analog inputs)";
             this.axisLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // doneLoading
+            // 
+            this.doneLoading.Tick += new System.EventHandler(this.doneLoading_Tick);
             // 
             // ElectricSunlightOrchestra
             // 
