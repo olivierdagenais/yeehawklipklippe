@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AxisMapping.cs" />
     <Compile Include="ButtonMapping.cs" />
     <Compile Include="ElectricSunlightOrchestra.cs">
       <SubType>Form</SubType>
@@ -46,6 +47,7 @@
     <Compile Include="ElectricSunlightOrchestra.Designer.cs">
       <DependentUpon>ElectricSunlightOrchestra.cs</DependentUpon>
     </Compile>
+    <Compile Include="MappingBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ElectricSunlightOrchestra.resx">
